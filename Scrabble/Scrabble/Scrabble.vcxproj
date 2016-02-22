@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E9F13F4A-BB05-42CA-8DA1-1CE1DA9CBA9C}</ProjectGuid>
+    <RootNamespace>Scrabble</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\SFML-2.3.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.3.2\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\SFML-2.3.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.3.2\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-graphics-s.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-main.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-graphics-s.lib;sfml-audio-s.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;gdi32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Dictionary.cpp" />
+    <ClCompile Include="DLScore.cpp" />
+    <ClCompile Include="DWScore.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Tiles.cpp" />
+    <ClCompile Include="TLScore.cpp" />
+    <ClCompile Include="TWScore.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="DLScore.h" />
+    <ClInclude Include="DWScore.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Tiles.h" />
+    <ClInclude Include="TLScore.h" />
+    <ClInclude Include="TWScore.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="A Words.txt" />
+    <Text Include="B Words.txt" />
+    <Text Include="C Words.txt" />
+    <Text Include="D Words.txt" />
+    <Text Include="E Words.txt" />
+    <Text Include="F Words.txt" />
+    <Text Include="G Words.txt" />
+    <Text Include="H Words.txt" />
+    <Text Include="I Words.txt" />
+    <Text Include="J Words.txt" />
+    <Text Include="K Words.txt" />
+    <Text Include="L Words.txt" />
+    <Text Include="M Words.txt" />
+    <Text Include="N Words.txt" />
+    <Text Include="O Words.txt" />
+    <Text Include="P Words.txt" />
+    <Text Include="Q Words.txt" />
+    <Text Include="R Words.txt" />
+    <Text Include="S Words.txt" />
+    <Text Include="T Words.txt" />
+    <Text Include="U Words.txt" />
+    <Text Include="V Words.txt" />
+    <Text Include="W Words.txt" />
+    <Text Include="X Words.txt" />
+    <Text Include="Y Words.txt" />
+    <Text Include="Z Words.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CenterStar.png" />
+    <Image Include="DoubleLetter.png" />
+    <Image Include="DoubleWord.png" />
+    <Image Include="letter.png" />
+    <Image Include="letter_A.png" />
+    <Image Include="letter_B.png" />
+    <Image Include="letter_C.png" />
+    <Image Include="letter_D.png" />
+    <Image Include="letter_E.png" />
+    <Image Include="letter_F.png" />
+    <Image Include="letter_G.png" />
+    <Image Include="letter_H.png" />
+    <Image Include="letter_I.png" />
+    <Image Include="letter_J.png" />
+    <Image Include="letter_K.png" />
+    <Image Include="letter_L.png" />
+    <Image Include="letter_M.png" />
+    <Image Include="letter_N.png" />
+    <Image Include="letter_O.png" />
+    <Image Include="letter_P.png" />
+    <Image Include="letter_Q.png" />
+    <Image Include="letter_R.png" />
+    <Image Include="letter_S.png" />
+    <Image Include="letter_T.png" />
+    <Image Include="letter_U.png" />
+    <Image Include="letter_V.png" />
+    <Image Include="letter_W.png" />
+    <Image Include="letter_X.png" />
+    <Image Include="letter_Y.png" />
+    <Image Include="letter_Z.png" />
+    <Image Include="TripleLetter.png" />
+    <Image Include="TripleWord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="FFF_Tusj.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
