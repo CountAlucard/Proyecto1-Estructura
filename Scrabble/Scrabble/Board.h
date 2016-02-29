@@ -10,7 +10,7 @@ class Board
 {
 public:
 	explicit Board(sf::RenderWindow *window);
-	static void DrawBoard(sf::RenderWindow *window);
+	static void DrawBoard(sf::RenderWindow *window, int num);
 	~Board();
 };
 

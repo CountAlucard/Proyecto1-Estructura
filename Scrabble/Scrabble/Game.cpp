@@ -9,7 +9,7 @@ Game::~Game()
 {
 }
 
-void Game::playGame(sf::RenderWindow *window)
+void Game::playGame(sf::RenderWindow *window, int num)
 {
 	Menu menu(window->getSize().x, window->getSize().y);
 	Dictionary d;
@@ -60,7 +60,7 @@ void Game::playGame(sf::RenderWindow *window)
 
 		window->clear();
 		menu.draw(window);
-		b.DrawBoard(window);
+		b.DrawBoard(window, num);
 		window->display();
 	}
 }
@@ -70,3 +70,17 @@ void Game::initPlayers(sf::Event event)
 	
 }
 
+void Game::placeTile(Tiles* tile,Board board, int posx, int posy)
+{
+
+	for (int i = 0; i < 15; i++)
+	{
+		for (int j = 0; j < 15; j++)
+		{
+			if(i == posx && j == posy)
+			{
+				
+			}
+		}
+	}
+}
